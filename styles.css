@@ -32,7 +32,7 @@ main {
     padding: 20px;
 }
 
-section {
+.page {
     background-color: #fff;
     margin-bottom: 20px;
     padding: 20px;
@@ -47,14 +47,17 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 button:hover {
     background-color: #555;
 }
 
+input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -70,4 +73,22 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+#campaign-list div, #task-list div {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#report-display {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#email-campaign {
+    margin-top: 20px;
 }
