@@ -11,63 +11,82 @@
         <h1>Marketing Campaign Manager</h1>
         <nav>
             <ul>
-                <li><a href="#campaigns">Campaigns</a></li>
-                <li><a href="#analytics">Analytics</a></li>
-                <li><a href="#tasks">Tasks</a></li>
-                <li><a href="#calendar">Calendar</a></li>
-                <li><a href="#reports">Reports</a></li>
-                <li><a href="#email-integration">Email Integration</a></li>
+                <li><a href="#" data-page="campaigns">Campaigns</a></li>
+                <li><a href="#" data-page="analytics">Analytics</a></li>
+                <li><a href="#" data-page="tasks">Tasks</a></li>
+                <li><a href="#" data-page="calendar">Calendar</a></li>
+                <li><a href="#" data-page="reports">Reports</a></li>
+                <li><a href="#" data-page="email-integration">Email Integration</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="campaigns">
+        <section id="campaigns" class="page">
             <h2>Campaigns</h2>
             <button id="create-campaign">Create New Campaign</button>
-            <div id="campaign-list">
-                <!-- Campaign list will be populated dynamically -->
+            <div id="campaign-list"></div>
+            <div id="campaign-form" style="display: none;">
+                <h3>Create Campaign</h3>
+                <form id="new-campaign-form">
+                    <input type="text" id="campaign-name" placeholder="Campaign Name" required>
+                    <textarea id="campaign-description" placeholder="Campaign Description" required></textarea>
+                    <button type="submit">Save Campaign</button>
+                </form>
             </div>
         </section>
 
-        <section id="analytics">
+        <section id="analytics" class="page" style="display: none;">
             <h2>Analytics</h2>
             <div id="analytics-dashboard">
-                <!-- Analytics data will be displayed here -->
+                <p>Campaign performance data will be displayed here.</p>
+                <!-- Placeholder for analytics data -->
             </div>
         </section>
 
-        <section id="tasks">
+        <section id="tasks" class="page" style="display: none;">
             <h2>Tasks</h2>
-            <div id="task-list">
-                <!-- Task list will be populated dynamically -->
+            <button id="create-task">Create New Task</button>
+            <div id="task-list"></div>
+            <div id="task-form" style="display: none;">
+                <h3>Create Task</h3>
+                <form id="new-task-form">
+                    <input type="text" id="task-name" placeholder="Task Name" required>
+                    <textarea id="task-description" placeholder="Task Description" required></textarea>
+                    <button type="submit">Save Task</button>
+                </form>
             </div>
         </section>
 
-        <section id="calendar">
+        <section id="calendar" class="page" style="display: none;">
             <h2>Calendar</h2>
             <div id="calendar-view">
-                <!-- Calendar will be implemented here -->
+                <p>Calendar view will be implemented here.</p>
+                <!-- Placeholder for calendar -->
             </div>
         </section>
 
-        <section id="reports">
+        <section id="reports" class="page" style="display: none;">
             <h2>Reports</h2>
             <button id="generate-report">Generate Report</button>
-            <div id="report-display">
-                <!-- Generated reports will be displayed here -->
-            </div>
+            <div id="report-display"></div>
         </section>
 
-        <section id="email-integration">
+        <section id="email-integration" class="page" style="display: none;">
             <h2>Email Integration</h2>
             <form id="email-connect-form">
                 <input type="email" id="email-address" placeholder="Enter your email address" required>
                 <input type="password" id="email-password" placeholder="Enter your email password" required>
                 <button type="submit">Connect Email</button>
             </form>
-            <div id="connected-email-status">
-                <!-- Connected email status will be displayed here -->
+            <div id="connected-email-status"></div>
+            <div id="email-campaign" style="display: none;">
+                <h3>Send Email Campaign</h3>
+                <form id="email-campaign-form">
+                    <input type="text" id="email-subject" placeholder="Email Subject" required>
+                    <textarea id="email-content" placeholder="Email Content" required></textarea>
+                    <button type="submit">Send Campaign</button>
+                </form>
             </div>
         </section>
     </main>
