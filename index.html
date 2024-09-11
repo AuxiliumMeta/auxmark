@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Campaign Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Marketing Campaign Manager</h1>
+        <nav>
+            <ul>
+                <li><a href="#campaigns">Campaigns</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#email-integration">Email Integration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="campaigns">
+            <h2>Campaigns</h2>
+            <button id="create-campaign">Create New Campaign</button>
+            <div id="campaign-list">
+                <!-- Campaign list will be populated dynamically -->
+            </div>
+        </section>
+
+        <section id="analytics">
+            <h2>Analytics</h2>
+            <div id="analytics-dashboard">
+                <!-- Analytics data will be displayed here -->
+            </div>
+        </section>
+
+        <section id="tasks">
+            <h2>Tasks</h2>
+            <div id="task-list">
+                <!-- Task list will be populated dynamically -->
+            </div>
+        </section>
+
+        <section id="calendar">
+            <h2>Calendar</h2>
+            <div id="calendar-view">
+                <!-- Calendar will be implemented here -->
+            </div>
+        </section>
+
+        <section id="reports">
+            <h2>Reports</h2>
+            <button id="generate-report">Generate Report</button>
+            <div id="report-display">
+                <!-- Generated reports will be displayed here -->
+            </div>
+        </section>
+
+        <section id="email-integration">
+            <h2>Email Integration</h2>
+            <form id="email-connect-form">
+                <input type="email" id="email-address" placeholder="Enter your email address" required>
+                <input type="password" id="email-password" placeholder="Enter your email password" required>
+                <button type="submit">Connect Email</button>
+            </form>
+            <div id="connected-email-status">
+                <!-- Connected email status will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marketing Campaign Manager</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
